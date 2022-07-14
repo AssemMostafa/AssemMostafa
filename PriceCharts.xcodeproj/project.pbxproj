@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59282C4DACB5F296CBAD444F /* Pods_PriceCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BED156D09E066F82805EB31 /* Pods_PriceCharts.framework */; };
 		C8932AF7287DE033001A3EAF /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8932AF6287DE033001A3EAF /* UIViewController.swift */; };
 		C8932AFB287DE12E001A3EAF /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8932AFA287DE12E001A3EAF /* BaseNavigationController.swift */; };
 		C8932AFD287DE159001A3EAF /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8932AFC287DE159001A3EAF /* ApplicationController.swift */; };
@@ -24,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52ED424E870350AB3BD5A174 /* Pods-PriceCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceCharts.release.xcconfig"; path = "Target Support Files/Pods-PriceCharts/Pods-PriceCharts.release.xcconfig"; sourceTree = "<group>"; };
+		5BED156D09E066F82805EB31 /* Pods_PriceCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2073A8596C8CEDA76D9CF76 /* Pods-PriceCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceCharts.debug.xcconfig"; path = "Target Support Files/Pods-PriceCharts/Pods-PriceCharts.debug.xcconfig"; sourceTree = "<group>"; };
 		C8932AF6287DE033001A3EAF /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		C8932AFA287DE12E001A3EAF /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		C8932AFC287DE159001A3EAF /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
@@ -47,12 +51,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59282C4DACB5F296CBAD444F /* Pods_PriceCharts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46193B3740FD0F68838AE3E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BED156D09E066F82805EB31 /* Pods_PriceCharts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCA798A3FD5989D4B0961EBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2073A8596C8CEDA76D9CF76 /* Pods-PriceCharts.debug.xcconfig */,
+				52ED424E870350AB3BD5A174 /* Pods-PriceCharts.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C8932AF3287DDFDA001A3EAF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +134,8 @@
 			children = (
 				C8D33F51287D26D600898C63 /* PriceCharts */,
 				C8D33F50287D26D600898C63 /* Products */,
+				BCA798A3FD5989D4B0961EBA /* Pods */,
+				46193B3740FD0F68838AE3E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8D33F63287D26D800898C63 /* Build configuration list for PBXNativeTarget "PriceCharts" */;
 			buildPhases = (
+				E2D05766E934B6E7833F261C /* [CP] Check Pods Manifest.lock */,
 				C8D33F4B287D26D600898C63 /* Sources */,
 				C8D33F4C287D26D600898C63 /* Frameworks */,
 				C8D33F4D287D26D600898C63 /* Resources */,
+				E66C103521369E66214AB8CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +233,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E2D05766E934B6E7833F261C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PriceCharts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E66C103521369E66214AB8CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PriceCharts/Pods-PriceCharts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PriceCharts/Pods-PriceCharts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PriceCharts/Pods-PriceCharts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C8D33F4B287D26D600898C63 /* Sources */ = {
@@ -364,6 +433,7 @@
 		};
 		C8D33F64287D26D800898C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2073A8596C8CEDA76D9CF76 /* Pods-PriceCharts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -391,6 +461,7 @@
 		};
 		C8D33F65287D26D800898C63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52ED424E870350AB3BD5A174 /* Pods-PriceCharts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
