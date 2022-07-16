@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Configuration.plist
+   PriceCharts
+
+   Created by Assem on 15/07/2022.
+   Copyright (c) 2022 ___ORGANIZATIONNAME___. All rights reserved.
+-->
+<plist version="1.0">
+<dict>
+    <key>Debug</key>
+    <dict>
+        <key>backendUrl</key>
+        <string>https://fapi.binance.com/fapi/v1/</string>
+    </dict>
+    <key>Release</key>
+    <dict>
+        <key>backendUrl</key>
+        <string>https://fapi.binance.com/fapi/v1/</string>
+    </dict>
+</dict>
+</plist>

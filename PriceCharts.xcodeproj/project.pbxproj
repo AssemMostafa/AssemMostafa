@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		59282C4DACB5F296CBAD444F /* Pods_PriceCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BED156D09E066F82805EB31 /* Pods_PriceCharts.framework */; };
+		C88832352880E017003F4EC3 /* ApiSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88832342880E016003F4EC3 /* ApiSessionManager.swift */; };
+		C888323E2880E268003F4EC3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888323D2880E268003F4EC3 /* NetworkError.swift */; };
+		C88832402880E285003F4EC3 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888323F2880E285003F4EC3 /* NetworkRequest.swift */; };
+		C88832422880E2A4003F4EC3 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88832412880E2A4003F4EC3 /* NetworkResponse.swift */; };
+		C88832442880E2C1003F4EC3 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88832432880E2C1003F4EC3 /* Environment.swift */; };
+		C88832462880E2E0003F4EC3 /* NetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88832452880E2E0003F4EC3 /* NetworkExecutor.swift */; };
+		C88832482880E39A003F4EC3 /* CandleStickRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88832472880E39A003F4EC3 /* CandleStickRequests.swift */; };
+		C888324A2880E51B003F4EC3 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = C88832492880E51B003F4EC3 /* Configuration.plist */; };
+		C888324D2880F43E003F4EC3 /* CandelsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888324C2880F43E003F4EC3 /* CandelsModel.swift */; };
+		C888325128814BCE003F4EC3 /* CurrencyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888324F28814BCE003F4EC3 /* CurrencyDetailsViewController.swift */; };
+		C888325228814BCE003F4EC3 /* CurrencyDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C888325028814BCE003F4EC3 /* CurrencyDetailsViewController.xib */; };
+		C888325C2882654C003F4EC3 /* String+NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888325B2882654C003F4EC3 /* String+NSArray.swift */; };
+		C888325E288265B5003F4EC3 /* ChartDataPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888325D288265B5003F4EC3 /* ChartDataPair.swift */; };
+		C888326028826841003F4EC3 /* CurrencyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888325F28826841003F4EC3 /* CurrencyDetailsViewModel.swift */; };
+		C8883262288269D4003F4EC3 /* HelperManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8883261288269D4003F4EC3 /* HelperManger.swift */; };
 		C8932AF7287DE033001A3EAF /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8932AF6287DE033001A3EAF /* UIViewController.swift */; };
 		C8932AFB287DE12E001A3EAF /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8932AFA287DE12E001A3EAF /* BaseNavigationController.swift */; };
 		C8932AFD287DE159001A3EAF /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8932AFC287DE159001A3EAF /* ApplicationController.swift */; };
@@ -28,6 +43,21 @@
 		52ED424E870350AB3BD5A174 /* Pods-PriceCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceCharts.release.xcconfig"; path = "Target Support Files/Pods-PriceCharts/Pods-PriceCharts.release.xcconfig"; sourceTree = "<group>"; };
 		5BED156D09E066F82805EB31 /* Pods_PriceCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2073A8596C8CEDA76D9CF76 /* Pods-PriceCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceCharts.debug.xcconfig"; path = "Target Support Files/Pods-PriceCharts/Pods-PriceCharts.debug.xcconfig"; sourceTree = "<group>"; };
+		C88832342880E016003F4EC3 /* ApiSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSessionManager.swift; sourceTree = "<group>"; };
+		C888323D2880E268003F4EC3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C888323F2880E285003F4EC3 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		C88832412880E2A4003F4EC3 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		C88832432880E2C1003F4EC3 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		C88832452880E2E0003F4EC3 /* NetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExecutor.swift; sourceTree = "<group>"; };
+		C88832472880E39A003F4EC3 /* CandleStickRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStickRequests.swift; sourceTree = "<group>"; };
+		C88832492880E51B003F4EC3 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		C888324C2880F43E003F4EC3 /* CandelsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandelsModel.swift; sourceTree = "<group>"; };
+		C888324F28814BCE003F4EC3 /* CurrencyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailsViewController.swift; sourceTree = "<group>"; };
+		C888325028814BCE003F4EC3 /* CurrencyDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyDetailsViewController.xib; sourceTree = "<group>"; };
+		C888325B2882654C003F4EC3 /* String+NSArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+NSArray.swift"; sourceTree = "<group>"; };
+		C888325D288265B5003F4EC3 /* ChartDataPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataPair.swift; sourceTree = "<group>"; };
+		C888325F28826841003F4EC3 /* CurrencyDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailsViewModel.swift; sourceTree = "<group>"; };
+		C8883261288269D4003F4EC3 /* HelperManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperManger.swift; sourceTree = "<group>"; };
 		C8932AF6287DE033001A3EAF /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		C8932AFA287DE12E001A3EAF /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		C8932AFC287DE159001A3EAF /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
@@ -72,20 +102,95 @@
 				C2073A8596C8CEDA76D9CF76 /* Pods-PriceCharts.debug.xcconfig */,
 				52ED424E870350AB3BD5A174 /* Pods-PriceCharts.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		C8932AF3287DDFDA001A3EAF /* Resources */ = {
+		C888322F2880BF08003F4EC3 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				C888324B2880F425003F4EC3 /* Model */,
+				C88832322880DFE6003F4EC3 /* Base */,
+				C88832302880DFD0003F4EC3 /* Router */,
 			);
-			path = Resources;
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		C88832302880DFD0003F4EC3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C88832312880DFDE003F4EC3 /* Requests */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C88832312880DFDE003F4EC3 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				C88832472880E39A003F4EC3 /* CandleStickRequests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		C88832322880DFE6003F4EC3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C888323C2880E246003F4EC3 /* Support */,
+				C88832332880E006003F4EC3 /* SessionManger */,
+				C88832432880E2C1003F4EC3 /* Environment.swift */,
+				C88832452880E2E0003F4EC3 /* NetworkExecutor.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C88832332880E006003F4EC3 /* SessionManger */ = {
+			isa = PBXGroup;
+			children = (
+				C88832342880E016003F4EC3 /* ApiSessionManager.swift */,
+			);
+			path = SessionManger;
+			sourceTree = "<group>";
+		};
+		C888323C2880E246003F4EC3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C888323D2880E268003F4EC3 /* NetworkError.swift */,
+				C888323F2880E285003F4EC3 /* NetworkRequest.swift */,
+				C88832412880E2A4003F4EC3 /* NetworkResponse.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		C888324B2880F425003F4EC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C888324C2880F43E003F4EC3 /* CandelsModel.swift */,
+				C888325D288265B5003F4EC3 /* ChartDataPair.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C888324E28814B78003F4EC3 /* Currency Details */ = {
+			isa = PBXGroup;
+			children = (
+				C888324F28814BCE003F4EC3 /* CurrencyDetailsViewController.swift */,
+				C888325028814BCE003F4EC3 /* CurrencyDetailsViewController.xib */,
+				C888325F28826841003F4EC3 /* CurrencyDetailsViewModel.swift */,
+			);
+			path = "Currency Details";
+			sourceTree = "<group>";
+		};
+		C8932AF3287DDFDA001A3EAF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C8883261288269D4003F4EC3 /* HelperManger.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		C8932AF4287DDFE6001A3EAF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C888324E28814B78003F4EC3 /* Currency Details */,
 				C8932AFE287DE17F001A3EAF /* Symbols  */,
 				C8932AF9287DE112001A3EAF /* Base */,
 			);
@@ -97,6 +202,7 @@
 			children = (
 				C8932AF6287DE033001A3EAF /* UIViewController.swift */,
 				C893EF9228800869009C1558 /* UIView+Designable.swift */,
+				C888325B2882654C003F4EC3 /* String+NSArray.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -150,9 +256,10 @@
 		C8D33F51287D26D600898C63 /* PriceCharts */ = {
 			isa = PBXGroup;
 			children = (
+				C888322F2880BF08003F4EC3 /* NetworkLayer */,
 				C8932AF5287DE006001A3EAF /* Extensions */,
 				C8932AF4287DDFE6001A3EAF /* Modules */,
-				C8932AF3287DDFDA001A3EAF /* Resources */,
+				C8932AF3287DDFDA001A3EAF /* Helper */,
 				C8D33F52287D26D600898C63 /* AppDelegate.swift */,
 				C8D33F54287D26D600898C63 /* SceneDelegate.swift */,
 				C8D33F56287D26D600898C63 /* ViewController.swift */,
@@ -160,6 +267,7 @@
 				C8D33F5B287D26D800898C63 /* Assets.xcassets */,
 				C8D33F5D287D26D800898C63 /* LaunchScreen.storyboard */,
 				C8D33F60287D26D800898C63 /* Info.plist */,
+				C88832492880E51B003F4EC3 /* Configuration.plist */,
 			);
 			path = PriceCharts;
 			sourceTree = "<group>";
@@ -226,7 +334,9 @@
 			files = (
 				C8D33F5F287D26D800898C63 /* LaunchScreen.storyboard in Resources */,
 				C8D33F5C287D26D800898C63 /* Assets.xcassets in Resources */,
+				C888325228814BCE003F4EC3 /* CurrencyDetailsViewController.xib in Resources */,
 				C8932B04287DE5AE001A3EAF /* SymbolsListViewController.xib in Resources */,
+				C888324A2880E51B003F4EC3 /* Configuration.plist in Resources */,
 				C8932B09287DECFE001A3EAF /* SymbolsCollectionViewCell.xib in Resources */,
 				C8D33F5A287D26D600898C63 /* Main.storyboard in Resources */,
 			);
@@ -281,15 +391,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C888323E2880E268003F4EC3 /* NetworkError.swift in Sources */,
+				C888325C2882654C003F4EC3 /* String+NSArray.swift in Sources */,
 				C8932AFD287DE159001A3EAF /* ApplicationController.swift in Sources */,
+				C88832402880E285003F4EC3 /* NetworkRequest.swift in Sources */,
+				C888325E288265B5003F4EC3 /* ChartDataPair.swift in Sources */,
+				C88832352880E017003F4EC3 /* ApiSessionManager.swift in Sources */,
 				C8D33F57287D26D600898C63 /* ViewController.swift in Sources */,
+				C88832462880E2E0003F4EC3 /* NetworkExecutor.swift in Sources */,
 				C8932B08287DECFE001A3EAF /* SymbolsCollectionViewCell.swift in Sources */,
 				C8D33F53287D26D600898C63 /* AppDelegate.swift in Sources */,
+				C88832422880E2A4003F4EC3 /* NetworkResponse.swift in Sources */,
+				C8883262288269D4003F4EC3 /* HelperManger.swift in Sources */,
+				C888326028826841003F4EC3 /* CurrencyDetailsViewModel.swift in Sources */,
 				C8932AF7287DE033001A3EAF /* UIViewController.swift in Sources */,
 				C893EF9328800869009C1558 /* UIView+Designable.swift in Sources */,
 				C8932AFB287DE12E001A3EAF /* BaseNavigationController.swift in Sources */,
+				C888325128814BCE003F4EC3 /* CurrencyDetailsViewController.swift in Sources */,
+				C88832482880E39A003F4EC3 /* CandleStickRequests.swift in Sources */,
+				C888324D2880F43E003F4EC3 /* CandelsModel.swift in Sources */,
 				C8932B03287DE5AE001A3EAF /* SymbolsListViewController.swift in Sources */,
 				C8D33F55287D26D600898C63 /* SceneDelegate.swift in Sources */,
+				C88832442880E2C1003F4EC3 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
