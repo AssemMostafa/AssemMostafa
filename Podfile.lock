@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - FTIndicator (1.2.9):
+    - FTIndicator/FTNotificationIndicator (= 1.2.9)
+    - FTIndicator/FTProgressIndicator (= 1.2.9)
+    - FTIndicator/FTToastIndicator (= 1.2.9)
+  - FTIndicator/FTNotificationIndicator (1.2.9)
+  - FTIndicator/FTProgressIndicator (1.2.9)
+  - FTIndicator/FTToastIndicator (1.2.9)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9)
+  - Charts
+  - FTIndicator
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Charts
+    - FTIndicator
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  FTIndicator: f7f071fd159e5befa1d040a9ef2e3ab53fa9322c
+
+PODFILE CHECKSUM: 52bf6cd92546cdc684e93f922893355c7c43ec7f
+
+COCOAPODS: 1.11.3
