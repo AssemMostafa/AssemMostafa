@@ -8,5 +8,10 @@ Getting Data:
  UI: 
  There were no problem in the design except when discover properties for CandleStick ChartView and i tried to get close enough to the wanted design.
  
+ Install Instructions:
+ 1- Just open cmd and choose your directory then enter git clone "https://github.com/AssemMostafa/PriceChartsTask.git".
+ 2- enter pod install to install pods.
+ 3- open xcworkspace file.
+ 
  Note: 
  As i mentioned before in the mail to Eman, i had some urgent circumstances that prevent me from complete bonus tasks so iam done with main task.
